@@ -1,0 +1,19 @@
+{
+  "employee": [
+    {
+      "id": 111,
+      "name": "Jinzen",
+      "Doj": "10-10-2020",
+      "salary": 35000,
+      "email": "jinz@gmail.com"
+    }
+  ],
+  "user": [
+    {
+      "name": "cgfmh",
+      "email": "gkiliyl",
+      "password": "",
+      "id": 1
+    }
+  ]
+}
