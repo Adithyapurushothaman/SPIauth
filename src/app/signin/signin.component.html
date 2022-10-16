@@ -11,7 +11,7 @@
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
   
-                  <form>
+                  <form [formGroup] = "loginForm" (ngSubmit)="signin()" method="post">
   
                     <div class="d-flex align-items-center mb-3 pb-1">
                       <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
@@ -19,21 +19,21 @@
                     </div>
   
                     <div class="form-outline mb-4">
-                      <input type="email" id="form2Example17" class="form-control form-control-lg" placeholder="User-id" />
+                      <input type="email" id="form2Example17" formControlName="email" class="form-control form-control-lg" placeholder="User-id" />
                       <label class="form-label"></label>
                     </div>
   
                     <div class="form-outline mb-4">
-                      <input type="password" id="form2Example27" class="form-control form-control-lg" placeholder="Password" />
+                      <input type="password" id="form2Example27" formControlName="password"class="form-control form-control-lg" placeholder="Password" />
                       <label class="form-label"></label>
                     </div>
   
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                      <input type="submit" value="Login" class="btn btn-primary btn-lg">
                     </div>
   
                     <a class="small text-muted" routerLink="REGISTER">Forgot password?</a>
-                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a routerLink="REGISTER"
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a routerLink="/REGISTER"
                         style="color: #393f81;">Register here</a></p>
                   </form>
   
